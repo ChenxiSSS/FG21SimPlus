@@ -1,4 +1,4 @@
-Foreground for 21 cm Reionization Signal Detection Simulation Plus Suite
+Foreground Simulation for 21 cm Reionization Signal Detection Plus Suite
 =============================================================
 
 The |FG21sim|_ is a low-frequency radio foregrounds simulator
