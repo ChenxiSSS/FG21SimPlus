@@ -1,85 +1,47 @@
 Foreground Simulation Suite Plus for the 21 cm Reionization Signal Detection
 =============================================================
 
-The |FG21sim|_ is a low-frequency radio foregrounds simulator
-aiming to provide the simulation of the common foregrounds
-impeding the 21 cm reionization signal detection.
-The simulated foregrounds can be used to evaluate the impacts of
-different foreground components on the EoR signal, and can be also
-used to help develop and test various foreground removal methods.
+The |FG21simP|_ is a simulation suite in the radio domain aiming to offer a 
+vivid modeling of the various  foregrounds for the 21 cm signal detection.
+This is the next-gen version of our |FG21sim|_ low frequency radio simulator.
+We build the |FG21simP|_ to generate a full sky simulation map for radio 
+facilities like BINGO, MWA, and SKA. 
 
-Features
+Key Features
 --------
 * Supported foreground components:
 
   + ``galactic/synchrotron``:
     Galactic synchrotron emission
-    (*Note:* only the *unpolarized* part considered)
+    (*Note:* only the *polarized* part)
   + ``galactic/freefree``:
     Galactic free-free emission
+    (*Note:* need to update the newest version to reflect Lian et al. 2020 papers)
   + ``galactic/snr``:
     Emission from Galactic supernovae remnants (SNRs)
-  + ``extragalactic/clusters``:
-    Emission from extragalactic galaxy clusters
-    (*Note:* only giant radio halos, the modeling of which is elaborated
+    (*Note:* Need to check the reference and get an update)
+  + ``extragalactic/discretesource``:
+    Emission from extragalactic discrete radio sources via AGN actvities and star formation
+    (*Note:* Currently, Chenxi, Yongkai, and Zhenghao are working on this)
+  + ``extragalactic/minihalo``:
+    Emission from extragalactic galaxy clusters with a miniture size)
+    (*Note:* Need an update.)
+  + ``extragalactic/relic``:
+    Emission from extragalactic galaxy clusters via shock reacceleration
+    (*Note:* Currently, Yongkai is working on this)
+  + ``extragalactic/halo``:
+    Emission from extragalactic galaxy clusters via turbulent reacceleration
+    (*Note:* for now, only giant radio halos are considered, the modeling of which is elaborated
     in our paper:
     `2019, ApJ, 879, 104 <https://iopscience.iop.org/article/10.3847/1538-4357/ab21bc>`_;
     `ADS:2019ApJ...879..104L <https://ui.adsabs.harvard.edu/abs/2019ApJ...879..104L>`_;
     `arXiv:1905.05399 <https://arxiv.org/abs/1905.05399>`_)
 
-* High-resolution simulation within sky patches
-* Fine-grained control with various configuration options
-* Modular and extensible
-* Clean code
+* Full sky simulation for all components
+* High-resolution, high-fedility, and high dynamic range imaging
+* Instrumental effects for BINGO, MWA, and SKA with easy access API
+* Diffrent level of products for various scientific usage
 * Command line utilities
-
-
-Installation
-------------
-1. Install the required software and libraries:
-
-   * `CFITSIO <https://heasarc.gsfc.nasa.gov/fitsio/fitsio.html>`_
-   * `HEALPix <http://healpix.sourceforge.net/>`_:
-     only the C++ library required by
-     `healpy <https://github.com/healpy/healpy>`_.
-   * `LLVM <http://llvm.org/>`_:
-     (required by `llvmlite <http://llvmlite.pydata.org/>`_ that is
-     further required by `Numba <http://numba.pydata.org/>`_)
-
-2. Clone this repository::
-
-    $ git clone https://github.com/liweitianux/fg21sim
-
-3. Install the required third-party Python packages.
-   And it is recommended to use the `virtual environment`_::
-
-    $ cd fg21sim/
-    $ make venv
-    $ . venv/bin/activate
-    (venv) $
-
-   Check to make sure that this virtual environment is activated so that the
-   ``python3`` and ``pip3`` are pointed to the virtual environment.
-
-4. Install this software into the virtual environment::
-
-    (venv) $ python3 setup.py install
-
-5. You are ready to use this software.  Just have a look, e.g.::
-
-    (venv) $ fg21sim --help
-
-
-Development
------------
-To ease the development, install this package in the **editable state**::
-
-    $ cd fg21sim/
-    $ pip3 install --user -r requirements.txt
-    $ pip3 install --editable .
-
-In addition, setting the environment variable ``DEBUG_FG21SIM`` forces
-this software to run at the ``DEBUG`` logging level.
 
 
 Documentations
@@ -106,6 +68,7 @@ Unless otherwise declared:
 
 .. |FG21sim| replace:: **FG21sim**
 .. _FG21sim: https://github.com/liweitianux/fg21sim
+.. _FG21simP: https://github.com/ChenxiSSS/fg21simp
 .. _`User Guide`:
    https://github.com/liweitianux/fg21sim/blob/master/docs/guide.rst
 .. _`simulation example`:
