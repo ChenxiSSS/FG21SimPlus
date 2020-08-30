@@ -1,7 +1,7 @@
 Foreground Simulation Suite Plus for the 21 cm Reionization Signal Detection
 =============================================================
 
-The FG21simP_ is a simulation suite in the radio domain aiming to offer a 
+The |FG21simP|_ is a simulation suite in the radio domain aiming to offer a 
 vivid modeling of the various  foregrounds for the 21 cm signal detection.
 This is the next-gen version of our |FG21sim|_ low frequency radio simulator.
 We build the |FG21simP|_ to generate a full sky simulation map for radio 
