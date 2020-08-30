@@ -1,10 +1,10 @@
 Foreground Simulation Suite Plus for the 21 cm Reionization Signal Detection
 =============================================================
 
-The |FG21simP|_ is a simulation suite in the radio domain aiming to offer a 
+The FG21simP_ is a simulation suite in the radio domain aiming to offer a 
 vivid modeling of the various  foregrounds for the 21 cm signal detection.
-This is the next-gen version of our |FG21sim|_ low frequency radio simulator.
-We build the |FG21simP|_ to generate a full sky simulation map for radio 
+This is the next-gen version of our FG21sim_ low frequency radio simulator.
+We build the FG21simP_ to generate a full sky simulation map for radio 
 facilities like BINGO, MWA, and SKA. 
 
 Key Features
@@ -13,25 +13,25 @@ Key Features
 
   + ``galactic/synchrotron``:
     Galactic synchrotron emission
-    (*Note:* only the *polarized* part)
+    (*Note:* Only the *polarized* part is considered.)
   + ``galactic/freefree``:
     Galactic free-free emission
-    (*Note:* need to update the newest version to reflect Lian et al. 2020 papers)
+    (*Note:* **Update** Need to update the newest version to reflect Lian et al. 2020 papers.)
   + ``galactic/snr``:
     Emission from Galactic supernovae remnants (SNRs)
-    (*Note:* Need to check the reference and get an update)
+    (*Note:* Need to check the reference and get an update.)
   + ``extragalactic/discretesource``:
     Emission from extragalactic discrete radio sources via AGN actvities and star formation
-    (*Note:* Currently, Chenxi, Yongkai, and Zhenghao are working on this)
+    (*Note:* **Update** Currently, Chenxi, Yongkai, and Zhenghao are working on this.)
   + ``extragalactic/minihalo``:
-    Emission from extragalactic galaxy clusters with a miniture size)
+    Emission from extragalactic galaxy clusters with a miniture size
     (*Note:* Need an update.)
   + ``extragalactic/relic``:
     Emission from extragalactic galaxy clusters via shock reacceleration
-    (*Note:* Currently, Yongkai is working on this)
+    (*Note:* **Update** Currently, Yongkai is working on this.)
   + ``extragalactic/halo``:
     Emission from extragalactic galaxy clusters via turbulent reacceleration
-    (*Note:* for now, only giant radio halos are considered, the modeling of which is elaborated
+    (*Note:* **Update** For now, only giant radio halos are considered, the modeling of which is elaborated
     in our paper:
     `2019, ApJ, 879, 104 <https://iopscience.iop.org/article/10.3847/1538-4357/ab21bc>`_;
     `ADS:2019ApJ...879..104L <https://ui.adsabs.harvard.edu/abs/2019ApJ...879..104L>`_;
