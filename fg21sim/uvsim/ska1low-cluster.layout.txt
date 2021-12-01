@@ -1,0 +1,64 @@
+#
+# SKA1-low cluster configurations
+# This is using the 36 outer stantions for long baseline calibration.
+# Only the one station has been chosen within the cluster.
+#
+# * Core: area 1000 m in diameter, within which the individual stations
+#   are randomly located with no overlap
+# * Central: area 1700 m in radius
+# * Cluster: a group of 6 stations placed randomly around a cluster
+#   location, only defined for stations outside the core area
+# * Individual stations will be 35-45 m in diameter
+# * Each station has 256 antenna elements randomly placed
+# * Total 512 stations; total 131,072 antenna elements
+# * 3 arms with each arm of the spiral will contain 16 clusters
+# * WGS84 Positions of SKA1-low Stations
+#
+# Note:
+# WGS84 is an Earth-centred, Earth-fixed terrestrial reference system
+# and geodetic datum
+#
+# Reference:
+# SKA-TEL-SKO-0000422, revision 02, 2016-05-31, Table 1
+# http://astronomers.skatelescope.org/wp-content/uploads/2016/09/SKA-TEL-SKO-0000422_02_SKA1_LowConfigurationCoordinates-1.pdf
+#
+# Array center: 116.7644482 , -26.82472208
+#
+Label	Longitude	Latitude
+CENTER	116.7644482	-26.82472208
+E5-1	116.7587488	-26.84394699
+E6-1	116.7717769	-26.84975404
+E7-1	116.7906677	-26.84866896
+E8-1	116.8116745	-26.8363453
+E9-1	116.8261115	-26.81023238
+S5-1	116.7491272	-26.81152597
+S6-1	116.7369384	-26.81849759
+S7-1	116.7286485	-26.83374709
+S8-1	116.7296735	-26.8560953
+S9-1	116.7478812	-26.88073626
+N5-1	116.7851002	-26.82014855
+N6-1	116.7843351	-26.8070545
+N7-1	116.7739721	-26.79281135
+N8-1	116.7515433	-26.78285983
+N9-1	116.7193487	-26.78450672
+E10-1	116.8347371	-26.86176268
+E11-1	116.8641579	-26.85878643
+E12-1	116.8672039	-26.90680861
+E13-1	116.9401077	-26.83064117
+E14-1	116.9922323	-26.79902736
+E15-1	117.0158578	-26.69732178
+E16-1	117.1008345	-26.69055242
+S10-1	116.6934694	-26.86364934
+S11-1	116.6668404	-26.89933818
+S12-1	116.621806	-26.86551456
+S13-1	116.654655	-26.94980057
+S14-1	116.6724452	-27.01275912
+S15-1	116.7350929	-27.06405311
+S16-1	116.7249633	-27.1277494
+N10-1	116.7629117	-26.75105887
+N11-1	116.8051832	-26.72196935
+N12-1	116.7246454	-26.71301006
+N13-1	116.6800133	-26.6850214
+N14-1	116.6251826	-26.66182193
+N15-1	116.5451234	-26.70516586
+N16-1	116.4524469	-26.60137167
